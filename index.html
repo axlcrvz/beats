@@ -12,43 +12,34 @@
         padding: 0;
       }
 
-      .gold-button {
-        background-color: #D6BD68;
-        color: white;
-        padding: 20px;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        display: block;
-        width: 100%;
-      }
-
-      .gold-button:hover {
-        background-color: goldenrod;
-      }
-
-      .button-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-      }
-
       h1,
       h2,
       p,
       iframe {
         text-align: center;
         margin: 20px auto;
-        display: block;
       }
 
       p {
         margin-bottom: 30px;
       }
 
-      footer {
-        text-align: center;
+      .gold-button {
+        background-color: #D6BD68;
+        color: white;
+        padding: 1vw 3vw;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 2.5vw;
         margin-top: 20px;
+      }
+
+      .gold-button:hover {
+        background-color: #DAA520;
       }
 
       .social-media-icons {
@@ -74,9 +65,31 @@
         margin-bottom: 20px;
       }
 
-      .gold-link {
-        display: block;
-        text-align: center;
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 aspect ratio (height divided by width) */
+        width: 100%;
+        margin-bottom: 40px;
+        /* Increase the margin-bottom for more space */
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .spotify-container {
+        display: flex;
+        justify-content: center;
+        /* Center the playlist horizontally */
+        align-items: center;
+        /* Center the playlist vertically */
+        margin-bottom: 40px;
+        /* Increase the margin-bottom for more space */
       }
 
       @media (max-width: 768px) {
@@ -85,88 +98,47 @@
         h2,
         p,
         .gold-button {
-          font-size: 30px;
+          font-size: 4vw;
           margin: 10px auto;
         }
 
-        .video-container,
-        .spotify-container,
-        .social-media-icons {
-          width: 100%;
-          max-width: 100%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
         .video-container {
-          position: relative;
           padding-bottom: 56.25%;
           /* 16:9 aspect ratio (height divided by width) */
-        }
-
-        .video-container iframe,
-        .spotify-container iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-        }
-
-        .button-container {
-          text-align: center;
-          margin-top: 10px;
-        }
-
-        .social-media-icons {
-          justify-content: center;
-          margin-top: 10px;
         }
 
         .section {
           padding: 10px;
           margin-bottom: 10px;
         }
-
-        .spotify-container {
-          padding-bottom: 80%;
-          margin-bottom: 10px;
-          overflow: hidden;
-        }
       }
     </style>
   </head>
   <body>
-    <div class="section">
-      <h1>@axlcrvz</h1>
-      <p>music producer</p>
-    </div>
+    <h1>@axlcrvz</h1>
+    <p>music producer</p>
     <div class="section">
       <h2>Beats</h2>
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed/P7X-siUejpQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
       </div>
-      <div class="button-container">
-        <a href="#" class="gold-link">
-          <button class="gold-button">Yellow Button</button>
-        </a>
-      </div>
+      <a href="#" class="gold-link">
+        <button class="gold-button">Yellow Button</button>
+      </a>
     </div>
     <div class="section">
       <h2>Loop Kit</h2>
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed/29m7y3GaBm4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
       </div>
-      <div class="button-container">
-        <a href="#" class="gold-link">
-          <button class="gold-button">Yellow Button</button>
-        </a>
-      </div>
+      <a href="#" class="gold-link">
+        <button class="gold-button">Yellow Button</button>
+      </a>
     </div>
     <div class="section">
       <h2>Credits</h2>
       <div class="spotify-container">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4v0XbpJbXsgPXzanIOo1yQ?utm_source=generator&theme=0" class="spotify-iframe" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4v0XbpJbXsgPXzanIOo1yQ?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </div>
     </div>
     <div class="section">
