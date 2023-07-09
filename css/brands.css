@@ -79,8 +79,8 @@ button:hover,
 
 /* Default (this is great for your own brand color!) */
 .button.button-default {
-  color: #332B00;
-  background-color: #332B00;
+  color: #FFFFFF;
+  background-color: #806C00;
   border: 1px solid #FFFFFF;
 }
 .button.button-default:hover,
