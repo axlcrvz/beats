@@ -80,8 +80,7 @@ button:hover,
 /* Default (this is great for your own brand color!) */
 .button.button-default {
   color: #FFFFFF;
-  background-color: #806C00;
-  border: 1px solid #FFFFFF;
+  background-color: #CDAD00;
 }
 .button.button-default:hover,
 .button.button-default:focus {
